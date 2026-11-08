@@ -25,10 +25,10 @@ The **SiGiL Framework** is a modular ecosystem of security-focused infrastructur
 +-------------------------------------------------------------------+
 |                        SiGiL ECOSYSTEM                            |
 +-------------------+--------------------+--------------------------+
-|  SECURITY & PROXY |  AUDIO & SIGNALS   |  OPERATING ENVIRONMENT   |
+|  SECURITY & PROXY |  AUDITING & THREAT |  OPERATING ENVIRONMENT   |
 +-------------------+--------------------+--------------------------+
-|  SiGiL-Proxy      |  SigilDAW          |  Aberration OS           |
-|  [Go / Reverse]   |  [C++ / JUCE]      |  [Debian / Cobalt]       |
+|  SiGiL-Proxy      |  Sentinel-X        |  Aberration OS           |
+|  [Go / Reverse]   |  [Go / eBPF]       |  [Debian / Cobalt]       |
 +-------------------+--------------------+--------------------------+
 
 ---
@@ -38,8 +38,8 @@ The **SiGiL Framework** is a modular ecosystem of security-focused infrastructur
 ### 1. SiGiL-Proxy
 High-performance, commercial-grade Go reverse proxy and guardrail engine. Implements per-IP rate limiting, cryptographic trace ID injection (X-Sigil-Request-ID), and real-time packet sanitization for local LLM traffic and sensitive endpoints.
 
-### 2. SigilDAW
-Custom C++/JUCE digital audio workstation optimized for raw signal processing, low-latency audio manipulation, and modular sound architecture under Linux.
+### 2. Sentinel-X
+Kernel-level threat monitoring and system audit engine written in Go and eBPF. Monitors system calls, socket bindings, and raw network telemetry in real time with near-zero overhead.
 
 ### 3. Aberration OS
 Debian-based Linux distribution pre-configured with security tooling, custom window management, and a stark Electric Cobalt visual signature.
